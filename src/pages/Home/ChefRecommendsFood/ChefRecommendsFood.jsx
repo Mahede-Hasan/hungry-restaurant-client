@@ -32,12 +32,12 @@ const ChefRecommendsFood = () => {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 lg:mx-0 md:mx-20 mx-10'>
                 {
                     chefFoods.map(food=>
-                    <div key={food._id} className='bg-[#F3F3F3]  h-[500px] mx-auto'>
-                        <img className='w-full h-[280px]' src={food.img} alt="" />
+                    <div key={food._id} className='bg-[#F3F3F3]  h-[500px] mx-auto rounded-lg'>
+                        <img className='w-full h-[280px] rounded-t-lg' src={food.img} alt="" />
                         <div className='flex flex-col items-center justify-center mt-6'>
                             <h3 className='text-xl font-semibold'>{food.food_name}</h3>
                             <p className='text-center py-4'>{food.short_description}</p>
-                            <button className='text-orange-400 uppercase text-[14px] font-semibold px-6 py-2 border-b-2 border-orange-400 rounded-xl bg-gray-100'>add to cart</button>
+                            <button className='text-orange-400 uppercase text-[14px] font-semibold px-6 py-2 border-b-2 border-orange-400 rounded-xl bg-gray-100 hover:bg-gray-200 transition-all duration-500'>add to cart</button>
                         </div>
                     </div>)
                 }

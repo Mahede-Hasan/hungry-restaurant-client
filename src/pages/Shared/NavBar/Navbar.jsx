@@ -17,7 +17,7 @@ const Navbar = () => {
                     <div tabIndex={0} role="button" className=" p-0 lg:hidden mr-3">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-8 w-8 text-white bg-gray-700 rounded border-white border-2"
+                            className="h-8 w-8 text-white bg-orange-400 rounded border-white border-2"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor">
