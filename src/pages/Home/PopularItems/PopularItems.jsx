@@ -16,12 +16,12 @@ import slide5 from '../../../assets/home/slide5.jpg';
 
 const PopularItems = () => {
 
-    return (
-        <div className='my-20'>
+    return ( 
+        <div className='my-20 lg:mx-0 md:mx-20 mx-10'>
             <SectionTitle heading="order online" subHeading="From 11:00am to 10:00pm"></SectionTitle>
             <Swiper
         slidesPerView={4}
-        spaceBetween={30}
+        spaceBetween={20}
         autoplay={{ delay: 3000 }}
         loop={true}
         pagination={{
@@ -30,11 +30,11 @@ const PopularItems = () => {
         modules={[Pagination,Autoplay]}
         className="mySwiper max-w-6xl mx-auto"
       >
-        <SwiperSlide><img src={slide1} alt="" /><h1 className='absolute bottom-10 font-semibold bg-black z-10 w-full py-4 bg-opacity-50 text-white text-2xl text-center'>Salad</h1></SwiperSlide>
-        <SwiperSlide><img src={slide2} alt="" /><h1 className='absolute bottom-10 font-semibold bg-black z-10 w-full py-4 bg-opacity-50 text-white text-2xl text-center'>Pizza</h1> </SwiperSlide>
-        <SwiperSlide><img src={slide3} alt="" /><h1 className='absolute bottom-10 font-semibold bg-black z-10 w-full py-4 bg-opacity-50 text-white text-2xl text-center'>Soup</h1> </SwiperSlide>
-        <SwiperSlide><img src={slide4} alt="" /><h1 className='absolute bottom-10 font-semibold bg-black z-10 w-full py-4 bg-opacity-50 text-white text-2xl text-center'>Cake</h1> </SwiperSlide>
-        <SwiperSlide><img src={slide5} alt="" /><h1 className='absolute bottom-10 font-semibold bg-black z-10 w-full py-4 bg-opacity-50 text-white text-2xl text-center'>Salad</h1> </SwiperSlide>
+        <SwiperSlide><img src={slide1} alt="" /><h1 className='absolute bottom-3 md:bottom-10 font-semibold bg-black z-10 w-full py-1 md:py-4 bg-opacity-50 text-white text-base md:text-2xl text-center'>Salad</h1></SwiperSlide>
+        <SwiperSlide><img src={slide2} alt="" /><h1 className='absolute bottom-3 md:bottom-10 font-semibold bg-black z-10 w-full py-1 md:py-4 bg-opacity-50 text-white text-base md:text-2xl text-center'>Pizza</h1> </SwiperSlide>
+        <SwiperSlide><img src={slide3} alt="" /><h1 className='absolute bottom-3 md:bottom-10 font-semibold bg-black z-10 w-full py-1 md:py-4 bg-opacity-50 text-white text-base md:text-2xl text-center'>Soup</h1> </SwiperSlide>
+        <SwiperSlide><img src={slide4} alt="" /><h1 className='absolute bottom-3 md:bottom-10 font-semibold bg-black z-10 w-full py-1 md:py-4 bg-opacity-50 text-white text-base md:text-2xl text-center'>Cake</h1> </SwiperSlide>
+        <SwiperSlide><img src={slide5} alt="" /><h1 className='absolute bottom-3 md:bottom-10 font-semibold bg-black z-10 w-full py-1 md:py-4 bg-opacity-50 text-white text-base md:text-2xl text-center'>Salad</h1> </SwiperSlide>
         
       </Swiper>
         </div>
